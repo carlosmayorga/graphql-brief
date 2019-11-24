@@ -1,2 +1,2 @@
 # graphql-brief
-:walking: GraphQL
+> A basic `GraphQL` example
