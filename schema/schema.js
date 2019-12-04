@@ -22,7 +22,7 @@ const UserType = new GraphQLObjectType({
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
     fields: {
-        user: {
+        users: {
             type: new GraphQLList(UserType),
             resolve(parentValue, args) {
                 return axios.get(`https://jsonplaceholder.typicode.com/posts`)

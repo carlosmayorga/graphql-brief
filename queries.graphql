@@ -1,0 +1,12 @@
+## Queries to use in GraphiQL Or PostMan
+########################################
+
+## Get list of users using fragment
+{
+  usuarios: users {
+    ...UsersFragment
+  } 
+}
+fragment UsersFragment on User{
+  title
+}
